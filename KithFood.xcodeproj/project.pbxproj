@@ -11,6 +11,7 @@
 		370C83183370C87274E6B683 /* KithFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A36A74E624E933309C03D8 /* KithFoodApp.swift */; };
 		3712F3C6CBD51B4E2495D0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481973094C51C32709C120AC /* Assets.xcassets */; };
 		3C23E4298DB6C2D3AA55CE92 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27812117F8EB9A7CA05EE0B /* SignInView.swift */; };
+		4233C5061BC3F8BC8B5B0C13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDBB3EB005058F2729F2189 /* GoogleService-Info.plist */; };
 		4B6899DA9FBE6C8A4D773068 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 7E551216756C6B9A9C0C3091 /* FirebaseFunctions */; };
 		5B1B6BD13D6B653B60BAB20A /* PhotoProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F75314FA33D079A691EAD7 /* PhotoProcessing.swift */; };
 		90EE03CCA6299EAE754D5293 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0FA6C32243CFCC320EA12 /* ImportView.swift */; };
@@ -40,6 +41,7 @@
 		9617B5136AD67B4F7C47EAAB /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 		A27812117F8EB9A7CA05EE0B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		ACE0FA6C32243CFCC320EA12 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		DCDBB3EB005058F2729F2189 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E72B8DB3273ABB6D8937148E /* MealMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				481973094C51C32709C120AC /* Assets.xcassets */,
+				DCDBB3EB005058F2729F2189 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3712F3C6CBD51B4E2495D0B7 /* Assets.xcassets in Resources */,
+				4233C5061BC3F8BC8B5B0C13 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

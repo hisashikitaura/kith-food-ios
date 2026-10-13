@@ -22,8 +22,8 @@ targets:
       - path: KithFood
         excludes:
           - Resources/GoogleService-Info.plist
-    resources:
       - path: KithFood/Resources/GoogleService-Info.plist
+        buildPhase: resources
         optional: true
     info:
       path: KithFood/Info.plist
