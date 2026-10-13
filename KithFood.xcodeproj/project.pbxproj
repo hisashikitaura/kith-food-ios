@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A69D3C18A2C375575F90D76 /* MealMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B8DB3273ABB6D8937148E /* MealMapView.swift */; };
+		370C83183370C87274E6B683 /* KithFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A36A74E624E933309C03D8 /* KithFoodApp.swift */; };
+		3712F3C6CBD51B4E2495D0B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481973094C51C32709C120AC /* Assets.xcassets */; };
+		3C23E4298DB6C2D3AA55CE92 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27812117F8EB9A7CA05EE0B /* SignInView.swift */; };
+		4B6899DA9FBE6C8A4D773068 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 7E551216756C6B9A9C0C3091 /* FirebaseFunctions */; };
+		5B1B6BD13D6B653B60BAB20A /* PhotoProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F75314FA33D079A691EAD7 /* PhotoProcessing.swift */; };
+		90EE03CCA6299EAE754D5293 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0FA6C32243CFCC320EA12 /* ImportView.swift */; };
+		A4C0B40ECF33D16972E8CE71 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0496BB602B45267075F1F55B /* GoogleSignIn */; };
+		A978EA6AD34E62E3CEF1832C /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F210A8D6D6826AA1038C44 /* MealListView.swift */; };
+		B7861F7D74F28A13618E2203 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8609574BF96E799921906A53 /* FirebaseAuth */; };
+		C500005D2422CDF6037EFDE8 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B96F236639DA1F12B2D13D /* AuthModel.swift */; };
+		CA17D990AD77425CBFA5FD77 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9617B5136AD67B4F7C47EAAB /* MealDetailView.swift */; };
+		CAADFA8956BA1FCF14B6F907 /* PlaceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C15B7FB13C8A7A732A7870 /* PlaceSearch.swift */; };
+		D470BB5F2A102C97BF31F03F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2857846441936E625F2EA /* Meal.swift */; };
+		DBFA7C382EACDCF25639B557 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 54D7993A0859B01D0DD87193 /* FirebaseFirestore */; };
+		F9A44956253A4A96ED89B290 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B00A0598DB8A4532DCD5E73D /* FirebaseStorage */; };
+		FC47F1AA971BE49A72AD2B12 /* MealStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74912941EBDC4BD751228778 /* MealStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04C15B7FB13C8A7A732A7870 /* PlaceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearch.swift; sourceTree = "<group>"; };
+		1153ED1550A6C4F826099881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		13E9802ED2F755F4366786AC /* KithFood.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KithFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F75314FA33D079A691EAD7 /* PhotoProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProcessing.swift; sourceTree = "<group>"; };
+		481973094C51C32709C120AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51F210A8D6D6826AA1038C44 /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
+		56B96F236639DA1F12B2D13D /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		5AF2857846441936E625F2EA /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		62A36A74E624E933309C03D8 /* KithFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KithFoodApp.swift; sourceTree = "<group>"; };
+		74912941EBDC4BD751228778 /* MealStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealStore.swift; sourceTree = "<group>"; };
+		9617B5136AD67B4F7C47EAAB /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		A27812117F8EB9A7CA05EE0B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		ACE0FA6C32243CFCC320EA12 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		E72B8DB3273ABB6D8937148E /* MealMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13775C189EC689234DEB9299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7861F7D74F28A13618E2203 /* FirebaseAuth in Frameworks */,
+				DBFA7C382EACDCF25639B557 /* FirebaseFirestore in Frameworks */,
+				F9A44956253A4A96ED89B290 /* FirebaseStorage in Frameworks */,
+				4B6899DA9FBE6C8A4D773068 /* FirebaseFunctions in Frameworks */,
+				A4C0B40ECF33D16972E8CE71 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AF2B9B68530CF9C54D70CBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				56B96F236639DA1F12B2D13D /* AuthModel.swift */,
+				74912941EBDC4BD751228778 /* MealStore.swift */,
+				28F75314FA33D079A691EAD7 /* PhotoProcessing.swift */,
+				04C15B7FB13C8A7A732A7870 /* PlaceSearch.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3967B3B34DCACC1D91EB5880 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACE0FA6C32243CFCC320EA12 /* ImportView.swift */,
+				9617B5136AD67B4F7C47EAAB /* MealDetailView.swift */,
+				51F210A8D6D6826AA1038C44 /* MealListView.swift */,
+				E72B8DB3273ABB6D8937148E /* MealMapView.swift */,
+				A27812117F8EB9A7CA05EE0B /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E427F312062D96E3AE224B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13E9802ED2F755F4366786AC /* KithFood.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848D074CC3DA735751E5DDC1 = {
+			isa = PBXGroup;
+			children = (
+				EC86CD0CF578645FDB536A80 /* KithFood */,
+				4E427F312062D96E3AE224B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84D3EF8CE835D916701D9CDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AF2857846441936E625F2EA /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		974FF3845105B892C8050D41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				481973094C51C32709C120AC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC86CD0CF578645FDB536A80 /* KithFood */ = {
+			isa = PBXGroup;
+			children = (
+				1153ED1550A6C4F826099881 /* Info.plist */,
+				62A36A74E624E933309C03D8 /* KithFoodApp.swift */,
+				84D3EF8CE835D916701D9CDC /* Models */,
+				974FF3845105B892C8050D41 /* Resources */,
+				1AF2B9B68530CF9C54D70CBC /* Services */,
+				3967B3B34DCACC1D91EB5880 /* Views */,
+			);
+			path = KithFood;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AA72DCD9A8712B6C36F88D5 /* KithFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A5E57077B0B4349B8498FB /* Build configuration list for PBXNativeTarget "KithFood" */;
+			buildPhases = (
+				1FF710C05EDBCC95EAAEC499 /* Sources */,
+				691805AA47B14E00F8E1DA92 /* Resources */,
+				13775C189EC689234DEB9299 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KithFood;
+			packageProductDependencies = (
+				8609574BF96E799921906A53 /* FirebaseAuth */,
+				54D7993A0859B01D0DD87193 /* FirebaseFirestore */,
+				B00A0598DB8A4532DCD5E73D /* FirebaseStorage */,
+				7E551216756C6B9A9C0C3091 /* FirebaseFunctions */,
+				0496BB602B45267075F1F55B /* GoogleSignIn */,
+			);
+			productName = KithFood;
+			productReference = 13E9802ED2F755F4366786AC /* KithFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7CC363BAB07BD0CCE9B0E80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5AA72DCD9A8712B6C36F88D5 = {
+						DevelopmentTeam = LMH979L5HP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DA5BB900588A83A62E623185 /* Build configuration list for PBXProject "KithFood" */;
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ja,
+			);
+			mainGroup = 848D074CC3DA735751E5DDC1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B8E1D808EF646B737BA31BB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				154215CCD85E151C1A2A332B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4E427F312062D96E3AE224B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AA72DCD9A8712B6C36F88D5 /* KithFood */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		691805AA47B14E00F8E1DA92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3712F3C6CBD51B4E2495D0B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FF710C05EDBCC95EAAEC499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C500005D2422CDF6037EFDE8 /* AuthModel.swift in Sources */,
+				90EE03CCA6299EAE754D5293 /* ImportView.swift in Sources */,
+				370C83183370C87274E6B683 /* KithFoodApp.swift in Sources */,
+				D470BB5F2A102C97BF31F03F /* Meal.swift in Sources */,
+				CA17D990AD77425CBFA5FD77 /* MealDetailView.swift in Sources */,
+				A978EA6AD34E62E3CEF1832C /* MealListView.swift in Sources */,
+				0A69D3C18A2C375575F90D76 /* MealMapView.swift in Sources */,
+				FC47F1AA971BE49A72AD2B12 /* MealStore.swift in Sources */,
+				5B1B6BD13D6B653B60BAB20A /* PhotoProcessing.swift in Sources */,
+				CAADFA8956BA1FCF14B6F907 /* PlaceSearch.swift in Sources */,
+				3C23E4298DB6C2D3AA55CE92 /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		41E6E4E2A3533C7A7BABEA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LMH979L5HP;
+				INFOPLIST_FILE = KithFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitaura.kithfood;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		531E0CCFA74B52FBBD4375FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5A0527D899419866500EBBF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LMH979L5HP;
+				INFOPLIST_FILE = KithFood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitaura.kithfood;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D20FF628FACA55AF1A8617F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA5BB900588A83A62E623185 /* Build configuration list for PBXProject "KithFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531E0CCFA74B52FBBD4375FE /* Debug */,
+				D20FF628FACA55AF1A8617F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F2A5E57077B0B4349B8498FB /* Build configuration list for PBXNativeTarget "KithFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E6E4E2A3533C7A7BABEA67 /* Debug */,
+				5A0527D899419866500EBBF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		154215CCD85E151C1A2A332B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		B8E1D808EF646B737BA31BB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0496BB602B45267075F1F55B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 154215CCD85E151C1A2A332B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		54D7993A0859B01D0DD87193 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E1D808EF646B737BA31BB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		7E551216756C6B9A9C0C3091 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E1D808EF646B737BA31BB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		8609574BF96E799921906A53 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E1D808EF646B737BA31BB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B00A0598DB8A4532DCD5E73D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E1D808EF646B737BA31BB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F7CC363BAB07BD0CCE9B0E80 /* Project object */;
+}
