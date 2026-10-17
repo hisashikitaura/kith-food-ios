@@ -21,6 +21,7 @@ struct Meal: Identifiable, Equatable {
     var aiComment: String
     var createdAt: Date?
 
+    /// Map position = photo location (PHAsset). nil = not shown on map.
     var coordinate: CLLocationCoordinate2D? {
         guard let lat, let lng else { return nil }
         return CLLocationCoordinate2D(latitude: lat, longitude: lng)
@@ -43,7 +44,11 @@ struct Meal: Identifiable, Equatable {
         createdAt = (data["createdAt"] as? Timestamp)?.dateValue()
     }
 
-    var displayDish: String { dish.isEmpty ? (aiStatus == "error" ? "未判定" : "分析中…") : dish }
+    var displayDish: String {
+        if !dish.isEmpty { return dish }
+        return aiStatus == "analyzing" ? "分析中…" : "未判定"
+    }
+    var needsAI: Bool { aiStatus != "done" && aiStatus != "analyzing" }
 }
 
 /// Minimal geohash encoder (base32), used for future range queries.

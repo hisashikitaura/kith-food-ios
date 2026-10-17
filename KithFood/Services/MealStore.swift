@@ -57,6 +57,15 @@ final class MealStore: ObservableObject {
         return ref.documentID
     }
 
+    @Published var bulkRunning = false
+
+    /// Re-run AI for every meal that is not analyzed yet (pending / error).
+    func analyzeAllFailed() async {
+        bulkRunning = true
+        defer { bulkRunning = false }
+        for m in meals where m.needsAI { await analyze(mealId: m.id) }
+    }
+
     func analyze(mealId: String) async {
         do {
             _ = try await functions.httpsCallable("analyzeDish").call(["mealId": mealId])
@@ -67,11 +76,12 @@ final class MealStore: ObservableObject {
 
     func update(_ meal: Meal) async throws {
         guard let uid else { return }
-        try await db.document("users/\(uid)/meals/\(meal.id)").updateData([
+        var data: [String: Any] = [
             "photoPath": meal.photoPath,
             "dish": meal.dish, "genre": meal.genre,
             "placeName": meal.placeName, "memo": meal.memo,
-        ])
+        ]
+        try await db.document("users/\(uid)/meals/\(meal.id)").updateData(data)
     }
 
     func delete(_ meal: Meal) async throws {

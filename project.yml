@@ -17,6 +17,7 @@ packages:
 targets:
   KithFood:
     type: application
+    scheme: {}
     platform: iOS
     sources:
       - path: KithFood

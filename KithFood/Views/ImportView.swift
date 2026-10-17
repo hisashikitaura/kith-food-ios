@@ -9,6 +9,7 @@ struct ImportDraft: Identifiable {
     let info: PhotoInfo
     var candidates: [PlaceCandidate] = []
     var placeName = ""
+    var place: PlaceCandidate?
     var saved = false
 }
 
@@ -42,18 +43,21 @@ struct ImportView: View {
                                 .frame(width: 80, height: 80).clipShape(RoundedRectangle(cornerRadius: 8))
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(d.info.date?.formatted(date: .abbreviated, time: .shortened) ?? "日時不明")
-                                Text(d.info.location == nil ? "位置情報なし" : "位置情報あり")
+                                Text(d.info.location == nil ? "位置情報なし（地図には表示されません）" : "写真の位置情報あり")
                                     .font(.caption).foregroundStyle(d.info.location == nil ? .orange : .secondary)
+
                                 if d.saved { Label("保存済み", systemImage: "checkmark.circle.fill").foregroundStyle(.green) }
                             }
                         }
                         if !d.candidates.isEmpty {
-                            Picker("近くの店", selection: $d.placeName) {
-                                Text("選択なし").tag("")
-                                ForEach(d.candidates) { c in Text("\(c.name)（\(c.distance)m）").tag(c.name) }
+                            Picker("近くの店", selection: Binding(
+                                get: { d.place },
+                                set: { d.place = $0; if let p = $0 { d.placeName = p.name } })) {
+                                Text("選択なし").tag(PlaceCandidate?.none)
+                                ForEach(d.candidates) { c in Text(c.label).tag(Optional(c)) }
                             }
                         }
-                        TextField("店名を入力", text: $d.placeName)
+                        TextField("店名（手入力）", text: $d.placeName)
                     }
                     .disabled(d.saved)
                 }
@@ -88,7 +92,6 @@ struct ImportView: View {
             var d = ImportDraft(preview: preview, jpeg: jpeg, info: info)
             if let c = info.location {
                 d.candidates = await PlaceSearch.nearby(c)
-                d.placeName = d.candidates.first?.name ?? ""
             }
             out.append(d)
         }

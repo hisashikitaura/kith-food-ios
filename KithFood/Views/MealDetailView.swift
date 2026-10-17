@@ -34,6 +34,10 @@ struct MealDetailView: View {
                             LabeledContent("料理", value: meal.displayDish)
                             LabeledContent("ジャンル", value: meal.genre.isEmpty ? "-" : meal.genre)
                             LabeledContent("店", value: meal.placeName.isEmpty ? "-" : meal.placeName)
+                            if meal.coordinate == nil {
+                                Text("写真に位置情報がないため地図に表示されません。")
+                                    .font(.caption).foregroundStyle(.orange)
+                            }
                             if let t = meal.takenAt {
                                 LabeledContent("日時", value: t.formatted(date: .long, time: .shortened))
                             }

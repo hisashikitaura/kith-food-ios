@@ -30,6 +30,17 @@ struct MealListView: View {
                 }
             }
             .navigationTitle("一覧")
+            .toolbar {
+                let n = store.meals.filter(\.needsAI).count
+                if n > 0 || store.bulkRunning {
+                    Button {
+                        Task { await store.analyzeAllFailed() }
+                    } label: {
+                        if store.bulkRunning { ProgressView() } else { Text("AI再判定(\(n))") }
+                    }
+                    .disabled(store.bulkRunning)
+                }
+            }
         }
     }
 }
