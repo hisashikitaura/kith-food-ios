@@ -24,10 +24,14 @@ targets:
         excludes:
           - Resources/GoogleService-Info.plist
           - Resources/AWSConfig.plist
+          - Resources/OwnerConfig.plist
       - path: KithFood/Resources/GoogleService-Info.plist
         buildPhase: resources
         optional: true
       - path: KithFood/Resources/AWSConfig.plist
+        buildPhase: resources
+        optional: true
+      - path: KithFood/Resources/OwnerConfig.plist
         buildPhase: resources
         optional: true
     info:

@@ -6,3 +6,4 @@ DerivedData/
 GoogleService-Info.plist
 .env*
 AWSConfig.plist
+OwnerConfig.plist

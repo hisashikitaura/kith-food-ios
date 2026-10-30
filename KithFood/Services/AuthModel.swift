@@ -12,7 +12,7 @@ final class AuthModel: ObservableObject {
     @Published var isLoading = false
 
     /// Same allow-list as the diary app (Firestore/Storage rules enforce it too).
-    private let allowedEmail = "owner@example.com"
+    private let allowedEmail = OwnerConfig.email
     private var handle: AuthStateDidChangeListenerHandle?
 
     init() {
@@ -40,7 +40,7 @@ final class AuthModel: ObservableObject {
         defer { isLoading = false }
         do {
             let result = try await GIDSignIn.sharedInstance.signIn(withPresenting: root)
-            guard result.user.profile?.email == allowedEmail else {
+            guard let allowed = allowedEmail, result.user.profile?.email.lowercased() == allowed else {
                 GIDSignIn.sharedInstance.signOut()
                 errorMessage = "このアカウントは使用できません"
                 return
