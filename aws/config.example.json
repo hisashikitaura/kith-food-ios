@@ -7,6 +7,7 @@
   "cognitoDomainPrefix": "kith-food-xxxx",
   "googleClientId": "",
   "googleClientSecretName": "kith-food/google-oauth-client-secret",
+  "googleClientSecretVersionId": "",
   "bedrockModelId": "jp.amazon.nova-2-lite-v1:0",
   "budgetUsd": 10
 }

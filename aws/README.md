@@ -32,7 +32,21 @@ GCP 側は `kith-diary-web/functions/.env.kith-diary` (gitignore) に `KF_AWS_RO
    - 承認済みリダイレクト URI: `https://<cognitoDomainPrefix>.auth.ap-northeast-1.amazoncognito.com/oauth2/idpresponse`
 2. `aws secretsmanager create-secret --name kith-food/google-oauth-client-secret --secret-string '<secret>' --profile kith`
 3. `config.local.json` の `googleClientId` に設定して `cdk deploy`
+   - さらに `googleClientSecretVersionId` に現在のバージョン ID を設定 (下記「シークレットのローテーション」)
 4. 初回ログイン時に PostConfirmation がマッピングを作成。手動の場合は `scripts/set-owner-mapping.sh`
+
+### シークレットのローテーション (値は表示・コミットしない)
+Secrets Manager の値だけ変えても CloudFormation テンプレートが変わらないため `cdk deploy` は "no changes" になり、Cognito に反映されません。バージョン ID を固定して変更を検知させます。
+```sh
+# 1. 新しい値を登録 (シェル履歴に残さないよう read -s で入力)
+read -s S && aws secretsmanager put-secret-value --secret-id kith-food/google-oauth-client-secret --secret-string "$S" --profile kith --query VersionId --output text; unset S
+# 2. 表示された VersionId (または下記で AWSCURRENT のもの) を config.local.json の googleClientSecretVersionId に設定
+aws secretsmanager list-secret-version-ids --secret-id kith-food/google-oauth-client-secret --profile kith --query 'Versions[?contains(VersionStages,`AWSCURRENT`)].VersionId' --output text
+# 3. 反映
+npx cdk diff --profile kith && npx cdk deploy --profile kith --outputs-file outputs.json
+# 4. 確認 (シークレットは出さない)
+aws cognito-idp describe-identity-provider --user-pool-id <UserPoolId> --provider-name Google --profile kith --query 'IdentityProvider.ProviderDetails.[client_id,authorize_scopes]'
+```
 
 ## Bedrock
 コンソール > Bedrock > Model access で Amazon Nova 2 Lite を有効化 (未有効の間は AI 判定のみ 503、他は動作)。

@@ -24,6 +24,8 @@ export interface KithFoodConfig {
   cognitoDomainPrefix: string;
   googleClientId?: string;
   googleClientSecretName?: string;
+  /** Secrets Manager VersionId of the Google client secret. Pinning it makes `cdk deploy` detect rotations. */
+  googleClientSecretVersionId?: string;
   bedrockModelId: string;
   budgetUsd?: number;
 }
@@ -142,7 +144,8 @@ export class KithFoodStack extends Stack {
       googleIdp = new cognito.UserPoolIdentityProviderGoogle(this, "Google", {
         userPool: pool,
         clientId: cfg.googleClientId,
-        clientSecretValue: SecretValue.secretsManager(cfg.googleClientSecretName ?? "kith-food/google-oauth-client-secret"),
+        clientSecretValue: SecretValue.secretsManager(cfg.googleClientSecretName ?? "kith-food/google-oauth-client-secret",
+          cfg.googleClientSecretVersionId ? { versionId: cfg.googleClientSecretVersionId } : {}),
         scopes: ["openid", "email", "profile"],
         attributeMapping: {
           email: cognito.ProviderAttribute.GOOGLE_EMAIL,
