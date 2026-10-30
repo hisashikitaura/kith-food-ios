@@ -1,0 +1,6 @@
+node_modules/
+cdk.out/
+config.local.json
+cdk.context.json
+outputs.json
+*.export.json

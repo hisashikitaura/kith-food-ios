@@ -29,6 +29,7 @@ struct MealListView: View {
                                            description: Text("「追加」タブから写真を取り込んでください"))
                 }
             }
+            .refreshable { await store.refresh() }
             .navigationTitle("一覧")
             .toolbar {
                 let n = store.meals.filter(\.needsAI).count

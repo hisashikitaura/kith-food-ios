@@ -5,3 +5,4 @@ DerivedData/
 *.xcuserstate
 GoogleService-Info.plist
 .env*
+AWSConfig.plist
